@@ -1,0 +1,14 @@
+.content__info-title {
+  margin: 30px 0 51px 0;
+  font-size: 65px;
+  font-weight: 400;
+  line-height: 73px;
+  text-transform: none;
+}
+
+@media screen and (max-width: 768px) {
+  .content__info-title {
+    font-size: 38px;
+    line-height: 50px;
+  }
+}

@@ -1,0 +1,43 @@
+@use 'mixins' as *;
+
+.header__burger {
+  position: relative;
+  margin-left: auto;
+  cursor: pointer;
+  width: 26px;
+  @include flex-center-column;
+  display: none;
+  gap: 8px;
+  &.opened {
+    .header__burger-line {
+      position: absolute;
+      width: 26px;
+      transition: transform 1s ease;
+    }
+    .line1 {
+      top: 50%;
+      transform: rotate(45deg);
+    }
+    .line2 {
+      display: none;
+    }
+    .line3 {
+      top: 50%;
+      transform: rotate(135deg);
+    }
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .header__burger {
+    display: flex;
+    height: 26px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__burger {
+    gap: 6px;
+    height: 20px;
+  }
+}

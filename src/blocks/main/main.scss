@@ -1,0 +1,5 @@
+@use 'mixins' as *;
+
+.main {
+  @include max-container(1440px);
+}

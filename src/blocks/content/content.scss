@@ -1,0 +1,30 @@
+@use 'mixins' as *;
+
+.content {
+  gap: 100px;
+  @include max-container(1360px);
+  margin: 0 0 0 auto;
+  padding: 150px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-template-areas:
+        "content image"
+        "button image";
+}
+
+@media screen and (max-width: 1120px) {
+  .content {
+    padding: 100px 0;
+    @include max-container(700px);
+    @include flex-center-column;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    padding: 60px;
+    gap: 60px;
+    @include max-container(280px);
+  }
+}

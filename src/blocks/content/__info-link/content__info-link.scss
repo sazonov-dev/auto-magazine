@@ -1,0 +1,28 @@
+.content__info-link {
+  grid-area: button;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  display: block;
+  max-width: 360px;
+  color: #E1FD2C;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 60px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  margin: 62px auto 0;
+  border: 1px solid #E1FD2C;
+  transition: background-color, color 0.35s ease-in-out;
+  &:hover {
+    background-color: #E1FD2C;
+    color: #191D2C;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .content__info-link {
+    margin: 0;
+  }
+}

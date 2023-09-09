@@ -1,0 +1,18 @@
+@use 'mixins' as *;
+
+.header {
+  @include max-container(1440px);
+  border-bottom: 1px solid #E1FD2C;
+}
+
+@media screen and (max-width: 1120px) {
+  .header {
+    @include max-container(700px)
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    @include max-container(280px);
+  }
+}

@@ -8,6 +8,31 @@
     <title>Auto-magazine</title>
 </head>
 <body class="body">
-
+    <header class="header">
+        <div class="header__container">
+            <div class="header__nav">
+                <a href="#" class="header__nav-link">факты</a>
+                <a href="#" class="header__nav-link">галерея</a>
+                <a href="#" class="header__nav-link">пресса</a>
+            </div>
+            <img src="<%=require('./images/logo/logo.svg')%>" alt="Логотип сайта" class="body__logo">
+            <div class="header__burger" id="burger-button" data-info="open">
+                <div class="header__burger-line line1"></div>
+                <div class="header__burger-line line2"></div>
+                <div class="header__burger-line line3"></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="content">
+            <div class="content__info">
+                <p class="content__info-type">volkswagen T1</p>
+                <h1 class="content__info-title">Новая версия популярного микроавтобуса</h1>
+                <p class="content__info-type">С ЭЛЕКТРО ДВИГАТЕЛЕМ</p>
+            </div>
+            <img src="<%=require('./images/content/volkswagenT1.jpg')%>" alt="Фотография volkswagen T1" class="content__img">
+            <a href="#" class="content__info-link">подробнее</a>
+        </section>
+    </main>
 </body>
 </html>

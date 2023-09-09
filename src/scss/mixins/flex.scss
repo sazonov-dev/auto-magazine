@@ -3,10 +3,21 @@
   flex-direction: column;
 }
 
+@mixin flex-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
 @mixin flex-center {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin flex-center-between {
+  @include flex-center;
+  justify-content: space-between;
 }
 
 @mixin flex-center-column {

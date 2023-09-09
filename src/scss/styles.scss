@@ -1,3 +1,20 @@
  @use '../vendor/normalize.css';
  @use '../fonts/fonts.scss';
  @use '../blocks/body/body.scss';
+ @use '../blocks/body/__logo/body__logo.scss';
+ @use '../blocks/main/main.scss';
+
+ @use '../blocks/header/header.scss';
+ @use '../blocks/header/__container/header__container.scss';
+ @use '../blocks/header/__nav/header__nav.scss';
+ @use '../blocks/header/__nav-link/header__nav-link.scss';
+ @use '../blocks/header/__burger/header__burger.scss';
+ @use '../blocks/header/__burger-line/header__burger-line.scss';
+
+
+ @use '../blocks/content/content.scss';
+ @use '../blocks/content/__info/content__info.scss';
+ @use '../blocks/content/__info-type/content__info-type.scss';
+ @use '../blocks/content/__info-title/content__info-title.scss';
+ @use '../blocks/content/__info-link/content__info-link.scss';
+ @use '../blocks/content/__img/content__img.scss';
